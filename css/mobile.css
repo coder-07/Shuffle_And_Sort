@@ -1,0 +1,78 @@
+/* Media query */
+
+/* Devies <960px */
+@media screen and (max-width: 959.9px) {
+    /* title */
+    .title {
+        background-color: var(--charcoal);
+        color: var(--white);
+    }
+
+    /* content */
+    .content-wrapper {
+        border-top: none;
+        background-color: var(--white);
+    }
+
+    .cards-and-button {
+        flex-direction: column-reverse;
+        min-height: auto;
+    }
+
+    /* cards */
+    .cards-section {
+        flex-direction: column;
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    .cards-section .card {
+        background-color: var(--light-grey);
+        color: var(--black);
+        font-size: 1rem;
+        padding: 0.7rem 0;
+        margin: 0 0 0.3rem;
+        border-width: 0 0 0 0.4rem;
+        border-style: solid;
+        width: 25rem;
+        max-width: 90%;
+    }
+
+    .teal-card {
+        border-color: var(--teal);
+    }
+    
+    .blue-card {
+        border-color: var(--blue);
+    }
+    
+    .dark-blue-card {
+        border-color: var(--dark-blue);
+    }
+    
+    .grey-card {
+        border-color: var(--grey);
+    }
+    /* cards ends */
+
+    /* buttons */
+    .buttons-section {
+        padding: 0.5rem 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .button {
+        max-width: 7rem;
+        margin: 0 0.5rem 0.7rem 0;
+    }
+
+    .button:last-child {
+        margin-right: 0;
+    }
+    /* buttons ends */
+    /* content ends */
+}
+
+/* Media query ends */

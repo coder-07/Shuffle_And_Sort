@@ -1,0 +1,104 @@
+body {
+    font-family: var(--font-family-root);
+    font-size: var(--font-size-root);
+}
+
+/* title */
+.title {
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+/* title ends */
+
+/* content */
+.content-wrapper {
+    box-sizing: border-box;
+    height: calc(100vh - 2.5rem);
+    background-color: var(--light-grey);
+    border-top: 0.25rem solid var(--grey);
+    overflow: auto;
+}
+
+.cards-and-button {
+    display: flex;
+    min-height: calc(100% - 2.5rem);
+}
+
+/* cards */
+.cards-section {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teal-card {
+    background-color: var(--teal);
+}
+
+.blue-card {
+    background-color: var(--blue);
+}
+
+.dark-blue-card {
+    background-color: var(--dark-blue);
+}
+
+.grey-card {
+    background-color: var(--grey);
+}
+
+.card {
+    box-sizing: border-box;
+    padding: 1.5rem;
+    flex-basis: 33.3333%;
+    color: var(--white);
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    animation: cardZoomIn 0.25s linear;
+}
+
+@keyframes cardZoomIn {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+  }
+/* cards ends */
+
+/* buttons */
+.buttons-section {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 1.5rem;
+}
+
+.button {
+    width: 100%;
+    padding: 1rem 0;
+    color: var(--white);
+    background-color: var(--light-blue);
+    border: none;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0.4rem var(--blue);
+    outline: none;
+}
+
+.button:active {
+    transform: translateY(0.2rem);
+    box-shadow: 0 0.2rem var(--blue);
+}
+/* buttons ends */
+/* content ends */
+
+/* footer */
+.footer {
+    font-style: italic;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 0.9rem;
+}
+/* footer ends */

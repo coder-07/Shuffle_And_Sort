@@ -1,0 +1,16 @@
+:root {
+    /* Colors */
+    --black: #000000;
+    --charcoal: #333333;
+    --white: #ffffff;
+    --light-grey: #efefef;
+    --grey: #bfbfbf;
+    --light-blue: #72c3dc;
+    --blue: #2b8ead;
+    --dark-blue: #2f454e;
+    --teal: #6f98a8;
+
+    /* fonts */
+    --font-family-root: Arial, Helvetica, sans-serif;
+    --font-size-root: 16px;
+}
